@@ -1,0 +1,47 @@
+{
+    "Insert 5 table": {
+        "prefix": "5table",
+        "body": [
+            "| <++> | <++> | <++> | <++> | <++> |",
+            "| ---- | ---- | ---- | ---- | ---- |",
+            "| <++> | <++> | <++> | <++> | <++> |",
+        ],
+        "description": "my 5 table"
+    },
+    "Insert 4 table": {
+        "prefix": "4table",
+        "body": [
+            "| <++> | <++> | <++> | <++> |",
+            "| ---- | ---- | ---- | ---- |",
+            "| <++> | <++> | <++> | <++> |",
+        ],
+        "description": "my 4 table"
+    },
+    "Insert 3 table": {
+        "prefix": "3table",
+        "body": [
+            "| <++> | <++> | <++> |",
+            "| ---- | ---- | ---- |",
+            "| <++> | <++> | <++> |",
+        ],
+        "description": "my 3 table"
+    },
+    "Insert 2 table": {
+        "prefix": "2table",
+        "body": [
+            "| <++> | <++> |",
+            "| ---- | ---- |",
+            "| <++> | <++> |",
+        ],
+        "description": "my 2 table"
+    },
+    "Insert 1 table": {
+        "prefix": "1table",
+        "body": [
+            "| <++> |",
+            "| ---- |",
+            "| <++> |",
+        ],
+        "description": "my 1 table"
+    },
+}
