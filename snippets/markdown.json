@@ -1,34 +1,4 @@
 {
-    "header 1": {
-        "prefix": "h1",
-        "body": ["# ${0}"],
-        "description": "Add header level 1"
-    },
-    "header 2": {
-        "prefix": "h2",
-        "body": ["## ${0}"],
-        "description": "Add header level 2"
-    },
-    "header 3": {
-        "prefix": "h3",
-        "body": ["### ${0}"],
-        "description": "Add header level 3"
-    },
-    "header 4": {
-        "prefix": "h4",
-        "body": ["#### ${0}"],
-        "description": "Add header level 4"
-    },
-    "header 5": {
-        "prefix": "h5",
-        "body": ["##### ${0}"],
-        "description": "Add header level 5"
-    },
-    "header 6": {
-        "prefix": "h6",
-        "body": ["###### ${0}"],
-        "description": "Add header level 6"
-    },
     "Links": {
         "prefix": ["l", "link"],
         "body": ["[${1:text}](${2:url}) ${0}"],
@@ -175,7 +145,7 @@
     "Insert 5 table": {
         "prefix": "5table",
         "body": [
-            "| <++> | <++> | <++> | <++> | <++> |",
+            "| ${1} | <++> | <++> | <++> | <++> |",
             "| ---- | ---- | ---- | ---- | ---- |",
             "| <++> | <++> | <++> | <++> | <++> |"
         ],
@@ -184,7 +154,7 @@
     "Insert 4 table": {
         "prefix": "4table",
         "body": [
-            "| <++> | <++> | <++> | <++> |",
+            "| ${1} | <++> | <++> | <++> |",
             "| ---- | ---- | ---- | ---- |",
             "| <++> | <++> | <++> | <++> |"
         ],
@@ -193,7 +163,7 @@
     "Insert 3 table": {
         "prefix": "3table",
         "body": [
-            "| <++> | <++> | <++> |",
+            "| ${1} | <++> | <++> |",
             "| ---- | ---- | ---- |",
             "| <++> | <++> | <++> |"
         ],
@@ -202,7 +172,7 @@
     "Insert 2 table": {
         "prefix": "2table",
         "body": [
-            "| <++> | <++> |",
+            "| ${1} | <++> |",
             "| ---- | ---- |",
             "| <++> | <++> |"
         ],
@@ -211,10 +181,108 @@
     "Insert 1 table": {
         "prefix": "1table",
         "body": [
-            "| <++> |",
+            "| ${1} |",
             "| ---- |",
             "| <++> |"
         ],
         "description": "my 1 table"
+    },
+    "dfrac": {
+        "prefix": "\\dfrac",
+        "body": [
+            "\\dfrac{ ${1} }{ <++> }"
+        ],
+        "description": "dfrac"
+    },
+    "overline": {
+        "prefix": "\\overline",
+        "body": [
+            "\\overline{ ${1} }"
+        ],
+        "description": "上横线"
+    },
+    "overbrace": {
+        "prefix": "\\overbrace",
+        "body": [
+            "\\overbrace{ ${1} }"
+        ],
+        "description": "上大括号"
+    },
+    "overrightarrow": {
+        "prefix": "\\overrightarrow",
+        "body": [
+            "\\overrightarrow{ ${1} }"
+        ],
+        "description": "上箭头"
+    },
+    "overset": {
+        "prefix": "\\overset",
+        "body": [
+            "\\overset{ ${1} }{ <++> }"
+        ],
+        "description": "上放置"
+    },
+    "underset": {
+        "prefix": "\\underset",
+        "body": [
+            "\\underset{ ${1} }{ <++> }"
+        ],
+        "description": "下放置"
+    },
+    "int": {
+        "prefix": "\\int",
+        "body": [
+            "\\int_{ ${1} }^{ <++> }"
+        ],
+        "description": "积分"
+    },
+    "iint": {
+        "prefix": "\\iint",
+        "body": [
+            "\\iint_{ ${1} }^{ <++> }"
+        ],
+        "description": "二重积分"
+    },
+    "oint": {
+        "prefix": "\\oint",
+        "body": [
+            "\\underset_{ ${1} }^{ <++> }"
+        ],
+        "description": "全积分"
+    },
+    "log": {
+        "prefix": "\\log",
+        "body": [
+            "\\log_{ ${1} }{ <++> }"
+        ],
+        "description": "log"
+    },
+    "ln": {
+        "prefix": "\\ln",
+        "body": [
+            "\\ln{ ${1} }"
+        ],
+        "description": "ln"
+    },
+    "sum": {
+        "prefix": "\\sum",
+        "body": [
+            "\\sun_{ ${1} }^{ <++> }"
+        ],
+        "description": "sum"
+    },
+    "prod": {
+        "prefix": "\\prod",
+        "body": [
+            "\\prod_{ ${1} }^{ <++> }"
+        ],
+        "description": "prod 累积"
+    },
+    "lim": {
+        "prefix": "\\lim",
+        "body": [
+            "\\lim_{ ${1} \\to \\infty}"
+        ],
+        "description": "lim"
     }
 }
